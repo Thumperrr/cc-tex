@@ -1,0 +1,59 @@
+{% raw %}
+\ProvidesPackage{generalreport}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,mathrsfs}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage[backend=biber,style=ieee,natbib=true]{biblatex}
+% \addbibresource{refs.bib} % The filename of the bibliography
+\usepackage{booktabs} 
+\usepackage{array}
+\usepackage{unicode-math}
+\usepackage{listings}
+
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+
+\newcommand{\answer}[1]{\boxed{\mbox{#1}}}
+\newcommand{\diag}[1]{\text{diag}\left\{#1\right\}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Y}{\mathbf{Y}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\Ht}{\tilde{H}}
+\newcommand{\w}{\omega}
+\newcommand{\Ltwo}{\mathcal{L}_2}
+\newcommand{\spn}[1]{\text{span}\{#1\}}
+\newcommand{\ip}[2]{\langle #1,#2 \rangle}
+
+\newcommand{\infnorm}[1]{||#1||_{\infty}}
+\newcommand{\onenorm}[1]{||#1||_1}
+\newcommand{\twonorm}[1]{||#1||_2}
+
+\DeclareSIUnit\au{AU}
+\DeclareSIUnit\du{DU}
+\DeclareSIUnit\tu{TU}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem:]{\newpage \begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.} \text{ }\\]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+{% endraw %}

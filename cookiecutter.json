@@ -1,0 +1,6 @@
+{
+    "name": "Steve Hall",
+    "project_name": "Analysis of Something",
+    "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}",
+    "date": "{% now 'local', '%d %b %Y' %}"
+}
